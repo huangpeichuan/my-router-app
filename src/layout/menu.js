@@ -40,10 +40,10 @@ class LeftMenu extends React.Component {
                             <span>Navigation One</span>
                         </span>
                     }>
-                        <Menu.Item key="5">Option 5</Menu.Item>
-                        <Menu.Item key="6">Option 6</Menu.Item>
-                        <Menu.Item key="7">Option 7</Menu.Item>
-                        <Menu.Item key="8">Option 8</Menu.Item>
+                        <Menu.Item key="sub1_1">Option 5</Menu.Item>
+                        <Menu.Item key="sub1_2">Option 6</Menu.Item>
+                        <Menu.Item key="sub1_3">Option 7</Menu.Item>
+                        <Menu.Item key="sub1_4">Option 8</Menu.Item>
                     </SubMenu>
                     <Menu.Item key="5">
                         <Icon type="cloud-o" />

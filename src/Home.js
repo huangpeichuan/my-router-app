@@ -9,10 +9,10 @@ class Home extends React.Component {
                 <div>This is Home!</div>
             </div>
             {/* 使用链接组件 */}
-            <Link to="/Page1/" style={{color:'black'}} >
-                <div>点击跳转到Page1页面</div>
+            <Link to="/Page1/" activeStyle={{color: 'red'}}  >
+                点击跳转到Page1页面
             </Link>
-            <Link to="/Page2/" style={{color:'green'}} >
+            <Link to="/Page2/" activeClassName="active" >
                 <div>点击跳转到Page2页面</div>
             </Link>
             <Link to="/Page3/" style={{color:'blue'}} >
