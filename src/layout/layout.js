@@ -2,13 +2,14 @@ import React from 'react';
 // import {Layout,Icon,Menu} from 'antd';
 import {Layout} from 'antd';
 import LeftMenu from './menu';
-
+import HeaderCustom from './HeaderCustom';
+import DocumentTitle from 'react-document-title';
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 import Home from '../Home';
 import Page1 from '../Page1';
 import Page2 from '../Page2';
 import Page3 from '../Page3';
-const {Header,Content,Footer,Sider} = Layout;
+const {Content,Footer,Sider} = Layout;
 // const { SubMenu } = Menu;
 
 //使用路由需要注意：Link组件和route组件必须被同一个Router包含
@@ -24,24 +25,22 @@ class Layouts extends React.Component {
 
     render() {
         return (
-            <Router>
+        <Router>
+            <DocumentTitle>   
             <Layout style={{height:'100%'}}>
                 <Sider style={{
                     overflow: 'auto',
                     height: '100vh',
                     position: 'fixed',
                     left: 0,
+                    background:'#2a566f',
                 }}>
                 {/* 左侧菜单 */}
                 <LeftMenu />
                 </Sider>
                 {/* 内容和头部 */}
                 <Layout style={{ marginLeft: 200 }}>
-                    <Header style={{ background: '#fff', padding: 0 }}>
-                        {/* <Icon className="trigger" type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-                        onClick={this.toggleCollapsed}
-                        /> */}
-                    </Header>
+                    <HeaderCustom />
                     <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
                     <div style={{ padding: 24, background: '#fff', textAlign: 'center' }}>
                         {/* <Router> */}
@@ -88,7 +87,8 @@ class Layouts extends React.Component {
                 <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
                 </Layout>
             </Layout>
-                    </Router>
+            </DocumentTitle>
+        </Router>
         );
     }
 }
