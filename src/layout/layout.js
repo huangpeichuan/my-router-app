@@ -33,7 +33,7 @@ class Layouts extends React.Component {
                     height: '100vh',
                     position: 'fixed',
                     left: 0,
-                    background:'#2a566f',
+                    background:'#313653',
                 }}>
                 {/* 左侧菜单 */}
                 <LeftMenu />

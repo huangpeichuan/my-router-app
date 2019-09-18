@@ -9,7 +9,7 @@ class HeaderCustom extends Component {
     render() {
 
         return (
-            <Header  className="custom-theme header" style={{ background: '#2A566F', padding: 0 }}>
+            <Header  className="custom-theme header" style={{ background: '#313653', padding: 0 }}>
                 <Menu
                     mode="horizontal"
                     style={{ lineHeight: '64px', float: 'right' }}
