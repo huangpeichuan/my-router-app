@@ -9,20 +9,21 @@ class HeaderCustom extends Component {
     render() {
 
         return (
-            <Header  className="custom-theme header" style={{ background: '#313653', padding: 0 }}>
-                <Menu
+            <Header  className="custom-theme header" >
+                <Menu theme="dark"
                     mode="horizontal"
                     style={{ lineHeight: '64px', float: 'right' }}
                     onClick={this.menuClick}
                 >
                     <Menu.Item key="full" onClick={this.screenFull} >
-                        <Icon type="arrows-alt" onClick={this.screenFull} />
+                        <Icon type="arrows-alt" title="全屏" onClick={this.screenFull} style={{ fontSize: '18px'}}  />
                     </Menu.Item>
                     <Menu.Item key="1">
-                        <Badge count={25} overflowCount={10} style={{marginLeft: 10}}>
-                            <Icon type="notification" />
+                        <Badge count={11} overflowCount={20} >
+                            <Icon type="notification" title="通知" style={{ fontSize: '20px'}} />
                         </Badge>
                     </Menu.Item>
+
                     <SubMenu title={<span className="avatar"><img src={avater} alt="头像" /><i className="on bottom b-white" /></span>}>
                         <MenuItemGroup title="用户中心">
                             {/* <Menu.Item key="setting:1">你好 - {this.props.user.userName}</Menu.Item> */}

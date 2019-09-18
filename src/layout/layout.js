@@ -33,16 +33,16 @@ class Layouts extends React.Component {
                     height: '100vh',
                     position: 'fixed',
                     left: 0,
-                    background:'#313653',
+                    // background:'#313653',
                 }}>
                 {/* 左侧菜单 */}
-                <LeftMenu />
+                <LeftMenu  />
                 </Sider>
                 {/* 内容和头部 */}
                 <Layout style={{ marginLeft: 200 }}>
                     <HeaderCustom />
                     <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
-                    <div style={{ padding: 24, background: '#fff', textAlign: 'center' }}>
+                    <div style={{ padding: 24, textAlign: 'center' }}>
                         {/* <Router> */}
                             <div>
                                 <Route path="/" component={Home} />
