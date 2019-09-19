@@ -7,9 +7,11 @@ import 'antd/dist/antd.css';
 import './layout/layout.css';
 import './style/menu.css';
 import './style/global.css';
+// import Page4 from './Page4';
 
 ReactDOM.render(
     // <App />,
     <Layouts />,
+    // <Page4 />
     document.getElementById('root')
 );
