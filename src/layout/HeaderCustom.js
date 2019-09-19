@@ -1,10 +1,24 @@
 import React, { Component } from 'react';
 import { Menu, Icon, Layout, Badge } from 'antd';
 import avater from '../style/img/A1.jpg';
+import screenfull from 'screenfull';
 const { Header } = Layout;
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 class HeaderCustom extends Component {
+
+    screenFull1 = () => {console.info(screenfull);
+        if (screenfull.isEnabled) {
+            screenfull.toggle();
+            // document.documentElement.requestFullscreen();
+        }
+
+    };
+
+    menuClick = e => {
+        console.log(e);
+        e.key === 'logout' && this.logout();
+    };
 
     render() {
 
@@ -16,7 +30,7 @@ class HeaderCustom extends Component {
                     onClick={this.menuClick}
                 >
                     <Menu.Item key="full" onClick={this.screenFull} >
-                        <Icon type="arrows-alt" title="全屏" onClick={this.screenFull} style={{ fontSize: '18px'}}  />
+                        <Icon type="arrows-alt" title="全屏" onClick={this.screenFull1} style={{ fontSize: '18px'}}  />
                     </Menu.Item>
                     <Menu.Item key="1">
                         <Badge count={11} overflowCount={20} >
