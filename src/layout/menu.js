@@ -25,7 +25,7 @@ class LeftMenu extends React.Component {
                         </Link>
                     </Menu.Item>
                     <Menu.Item key="3">
-                        <Link to="/Page3/"  >
+                        <Link to="/Gallery/"  >
                             <Icon type="upload" />
                             <span className="nav-text">nav 3</span>
                         </Link>
