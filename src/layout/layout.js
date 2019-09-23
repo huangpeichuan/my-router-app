@@ -42,18 +42,18 @@ class Layouts extends React.Component {
                 {/* 内容和头部 */}
                 <Layout style={{ marginLeft: 200 }}>
                     <HeaderCustom />
-                    <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
-                    <div style={{ padding: 24, textAlign: 'center' }}>
-                        {/* <Router> */}
-                            <div>
-                                <Route path="/" component={Home} />
-                                <Route path="/Page1/" component={Page1} />
-                                <Route path="/Page2/" component={Page2} />
-                                <Route path="/Gallery/" component={Gallery} />
-                            </div>
-                        {/* </Router> */}
-                    </div>
-                </Content>
+                    <Content style={{ padding: '0 6px', overflow: 'initial',backgroundColor:'gainsboro' }}>
+                        <div style={{textAlign: 'center' }}>
+                            {/* <Router> */}
+                                <div>
+                                    <Route exact path="/" component={Home} />
+                                    <Route path="/Page1/" component={Page1} />
+                                    <Route path="/Page2/" component={Page2} />
+                                    <Route path="/Gallery/" component={Gallery} />
+                                </div>
+                            {/* </Router> */}
+                        </div>
+                    </Content>
 
                 <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
                 </Layout>

@@ -19,6 +19,10 @@ class HeaderCustom extends Component {
         console.log(e);
         e.key === 'logout' && this.logout();
     };
+    logout = () => {
+        localStorage.removeItem('user');
+        this.props.history.push('/login')
+    };
 
     render() {
 
